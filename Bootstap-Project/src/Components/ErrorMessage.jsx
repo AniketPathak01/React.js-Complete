@@ -1,10 +1,4 @@
-
-let ErrorMessege = (props) =>{
-   
-
-    if(props.items.length === 0)
-    return (
-         <h3>I am hungry</h3>
-    );
-}
-export default ErrorMessege
+let ErrorMessage = ({ item }) => {
+  if (item.length === 0) return <h2>I am Hungry</h2>;
+};
+export default ErrorMessage;

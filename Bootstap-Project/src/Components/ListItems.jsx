@@ -1,12 +1,13 @@
-
 import Item from "./IndivudalItme";
-const ListItems = (props) =>{
-
-    return (
-        <ul className="list-group">
-            {props.items.map((items) =>(<Item key= {items} foodItem = {items}></Item>))}
-        </ul>
-    );
-}
-
-export default ListItems
+let ListItems = ({ item }) => {
+  return (
+    <>
+      <ul className="list-group">
+        {item.map((item) => (
+          <Item key={item} foodItem={item}></Item>
+        ))}
+      </ul>
+    </>
+  );
+};
+export default ListItems;

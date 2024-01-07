@@ -1,7 +1,8 @@
-
-let Item = (props) =>{
-    return(
-        <li className="list-group-item">{props.foodItem}</li>
-    );
-}
-export default Item
+let Item = ({ foodItem }) => {
+  return (
+    <ul className="list-group">
+      <li className="list-group-item">{foodItem}</li>
+    </ul>
+  );
+};
+export default Item;
