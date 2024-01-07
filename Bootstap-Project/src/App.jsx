@@ -1,4 +1,6 @@
 
+import ListItems from './Components/ListItems';
+import ErrorMessege from './Components/ErrorMessage';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
@@ -19,12 +21,9 @@ function App() {
   return (
     <>
     <h1>Healthy Food</h1>
-      <ul className="list-group">
-        //Logical operator
-        {foodItems.length === 0 && <h3>I am hungry</h3>}
-        
-        {foodItems.map((items) =>(<li key={items} className="list-group-item">{items}</li>))}
-      </ul>
+    <ErrorMessege items = {foodItems}></ErrorMessege>
+    <ListItems items = {foodItems}></ListItems>
+
     </>
   )
 }
