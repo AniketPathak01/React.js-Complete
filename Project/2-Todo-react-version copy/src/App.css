@@ -1,0 +1,20 @@
+
+h1{
+    font-weight: 700;
+    font-size: 45px;
+}
+input {
+    width: 50%;
+}
+
+#mainApp{
+    
+    border: transparent;
+    background-color: rgb(92, 6, 154);
+
+    color: #ffff;
+}
+
+.kg-button{
+  min-width: 80px;
+}
