@@ -1,9 +1,9 @@
 import { useState } from "react";
 
 function AddTodo({ onNewItem }) {
-  const [todoName, setTodoName] = useState();
+  const [todoName, setTodoName] = useState("");
 
-  const [todoDate, setTodoDate] = useState();
+  const [todoDate, setTodoDate] = useState("");
 
   const handleNameChange = (event) => {
     setTodoName(event.target.value);
@@ -18,9 +18,9 @@ function AddTodo({ onNewItem }) {
     setTodoName("");
   };
   return (
-    <div class="container mt-5">
-      <div class="row">
-        <div class="col-5">
+    <div className="container mt-5">
+      <div className="row">
+        <div className="col-5">
           <input
             type="text"
             placeholder="Enter Tode here"
@@ -28,13 +28,13 @@ function AddTodo({ onNewItem }) {
             onChange={handleNameChange}
           />
         </div>
-        <div class="col-5">
+        <div className="col-5">
           <input type="date" value={todoDate} onChange={handleDateChange} />
         </div>
-        <div class="col-2">
+        <div className="col-2">
           <button
             type="button"
-            class="btn btn-success kg-button"
+            className="btn btn-success kg-button"
             onClick={handleAddButtonClicked}
           >
             Add

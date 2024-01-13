@@ -1,13 +1,13 @@
 function AddList({ todoName, todoDate, onDeleteClick }) {
   return (
-    <div class="container">
-      <div class="row mt-3">
-        <div class="col-5">{todoName}</div>
-        <div class="col-5">{todoDate}</div>
-        <div class="col-2">
+    <div className="container">
+      <div className="row mt-3">
+        <div className="col-5">{todoName}</div>
+        <div className="col-5">{todoDate}</div>
+        <div className="col-2">
           <button
             type="button"
-            class="btn btn-danger kg-button"
+            className="btn btn-danger kg-button"
             onClick={() => onDeleteClick(todoName)}
           >
             Delete
