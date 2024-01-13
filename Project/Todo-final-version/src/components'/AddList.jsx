@@ -1,3 +1,5 @@
+import { MdDelete } from "react-icons/md";
+
 function AddList({ todoName, todoDate, onDeleteClick }) {
   return (
     <div className="container">
@@ -10,7 +12,7 @@ function AddList({ todoName, todoDate, onDeleteClick }) {
             className="btn btn-danger kg-button"
             onClick={() => onDeleteClick(todoName)}
           >
-            Delete
+            <MdDelete />
           </button>
         </div>
       </div>
