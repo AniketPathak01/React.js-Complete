@@ -36,7 +36,7 @@ function App() {
 
   return (
     <Container>
-      <h1 className="food-heading">Healthy Food</h1>
+      <h1 classNameName="food-heading">Healthy Food</h1>
       <ErrorMessege item={foodItems}></ErrorMessege>
       <FoodInput handelKeyDown={onKeyDown}></FoodInput>
       <ListItems item={foodItems}></ListItems>

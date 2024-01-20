@@ -5,14 +5,14 @@ import { TodoItemContext } from "../store/todo-item-store";
 function AddList({ todoName, todoDate }) {
   const { deleteItem } = useContext(TodoItemContext);
   return (
-    <div className="container">
-      <div className="row mt-3">
-        <div className="col-5">{todoName}</div>
-        <div className="col-5">{todoDate}</div>
-        <div className="col-2">
+    <div classNameName="container">
+      <div classNameName="row mt-3">
+        <div classNameName="col-5">{todoName}</div>
+        <div classNameName="col-5">{todoDate}</div>
+        <div classNameName="col-2">
           <button
             type="button"
-            className="btn btn-danger kg-button"
+            classNameName="btn btn-danger kg-button"
             onClick={() => deleteItem(todoName)}
           >
             <MdDelete />

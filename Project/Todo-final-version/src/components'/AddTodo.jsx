@@ -19,9 +19,9 @@ function AddTodo({ onNewItem }) {
     setTodoName("");
   };
   return (
-    <div className="container mt-5">
-      <div className="row">
-        <div className="col-5">
+    <div classNameName="container mt-5">
+      <div classNameName="row">
+        <div classNameName="col-5">
           <input
             type="text"
             placeholder="Enter Tode here"
@@ -29,13 +29,13 @@ function AddTodo({ onNewItem }) {
             onChange={handleNameChange}
           />
         </div>
-        <div className="col-5">
+        <div classNameName="col-5">
           <input type="date" value={todoDate} onChange={handleDateChange} />
         </div>
-        <div className="col-2">
+        <div classNameName="col-2">
           <button
             type="button"
-            className="btn btn-success kg-button"
+            classNameName="btn btn-success kg-button"
             onClick={handleAddButtonClicked}
           >
             <IoMdAddCircle />

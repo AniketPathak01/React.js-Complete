@@ -5,7 +5,7 @@ import { TodoItemContext } from "../store/todo-item-store";
 const TodoItem = () => {
   const { todoItem } = useContext(TodoItemContext);
   return (
-    <div className="items-container" id="content">
+    <div classNameName="items-container" id="content">
       {todoItem.map((item) => (
         <AddList
           key={item.name}

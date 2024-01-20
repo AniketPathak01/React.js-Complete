@@ -16,26 +16,20 @@ function AddTodo({ onNewItem }) {
     onNewItem(todoName, dueDate);
   };
   return (
-    <div className="container mt-5">
-      <form className="row" onSubmit={handleAddButtonClicked}>
-        <div className="col-5">
+    <div classNameName="container mt-5">
+      <form classNameName="row" onSubmit={handleAddButtonClicked}>
+        <div classNameName="col-5">
           <input
             type="text"
             ref={todoNameElement}
             placeholder="Enter Tode here"
           />
         </div>
-        <div className="col-5">
-          <input
-            type="date"
-            ref={dueDateElement}
-          />
+        <div classNameName="col-5">
+          <input type="date" ref={dueDateElement} />
         </div>
-        <div className="col-2">
-          <button
-            type="submit"
-            className="btn btn-success kg-button"
-          >
+        <div classNameName="col-2">
+          <button type="submit" classNameName="btn btn-success kg-button">
             <IoMdAddCircle />
           </button>
         </div>
