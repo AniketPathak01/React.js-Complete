@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import Post from "./Post";
 import { PostListContext } from "../store/post-list-store";
 import WelcomeMessage from "./WelcomeMessage";
@@ -6,11 +6,18 @@ import WelcomeMessage from "./WelcomeMessage";
 function PostList() {
   const { postList, addInitialPosts } = useContext(PostListContext);
 
+  // useEffect(() => {
+  //   fetch("https://dummyjson.com/posts")
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       addInitialPosts(data.posts);
+  //     });
+  // }, []);
   const handleGetPostClick = () => {
     fetch("https://dummyjson.com/posts")
       .then((res) => res.json())
       .then((data) => {
-        addInitialPosts(data.posts)
+        addInitialPosts(data.posts);
       });
   };
   return (
