@@ -36,6 +36,7 @@ function CreatePost() {
           className="form-control"
           id="userId"
           placeholder="Your user Id"
+          required
         />
       </div>
       <div className="mb-3">
@@ -48,6 +49,7 @@ function CreatePost() {
           className="form-control"
           id="title"
           placeholder="How are you feeling today..."
+          required
         />
       </div>
       <div className="mb-3">
@@ -61,6 +63,7 @@ function CreatePost() {
           className="form-control"
           id="body"
           placeholder="Tell us more about it.."
+          required
         />
       </div>
       <div className="mb-3">

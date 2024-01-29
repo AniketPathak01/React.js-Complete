@@ -7,7 +7,6 @@ import CreatePost from "./components/CreatePost";
 import PostList from "./components/PostList";
 import { useState } from "react";
 import PostListProvider from "./store/post-list-store";
-import WelcomeMessage from "./components/WelcomeMessage";
 
 function App() {
   const [selectedTab, setSelectedTab] = useState("Home");
@@ -26,7 +25,7 @@ function App() {
           ) : (
             <CreatePost></CreatePost>
           )}
-          {selectedTab === "Home" && <WelcomeMessage />}
+
           {selectedTab === "Create Post" && <Footer></Footer>}
         </div>
       </div>

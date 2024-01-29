@@ -1,13 +1,18 @@
-import { useContext } from "react";
 import styles from "./WelcomeMessege.module.css";
-import { PostListContext } from "../store/post-list-store";
-const WelcomeMessage = () => {
-  const contextObj = useContext(PostListContext);
-  const postList = contextObj.postList;
+const WelcomeMessage = ({ onGetPostClick }) => {
   return (
-    postList.length === 0 && (
-      <p className={styles.welcome}>Oops! Looks like there are no posts on this page! Please Add Posts.</p>
-    )
+    <center>
+      <p className={styles.welcome}>
+        Oops! Looks like there are no posts on this page! Please Add Posts.
+      </p>
+      <button
+        type="button"
+        className="btn btn-primary"
+        onClick={onGetPostClick}
+      >
+        Get Posts from server
+      </button>
+    </center>
   );
 };
 export default WelcomeMessage;
