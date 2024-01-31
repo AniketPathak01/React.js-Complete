@@ -1,0 +1,67 @@
+body{
+  display: flex;
+  justify-content: center;
+  
+
+}
+.box{
+  margin-top: 170px;
+  height: 200px;
+  width: 700px;
+  background-color: gray;
+  border-radius: 15px;
+}
+h2{
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+.passinput{
+  background-color: white;
+  color: orange;
+  height: 40px;
+  width: 80%;
+  margin-left: 30px;
+  margin-top: 10px;
+  border: none;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  font-size: 25px;
+}
+
+.button-28{
+  height: 40px;
+  width: 80px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: rgb(216, 244, 6);
+  border: none;
+  color: #000;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.button-28:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+
+}
+.rangee{
+  margin-left: 30px;
+  margin-top: 30px;
+  margin-right: 15px;
+  font-size: 23px;
+}
+.length{
+  margin-left: 5px;
+  font-size: 23px;
+  color: rgb(255, 0, 0);
+  font-weight: 600;
+}
+.chekkbox{
+  display: inline-block;
+  margin-left: 25px;
+  font-size: 23px;
+  color: rgb(255, 0, 0);
+  font-weight: 600;
+}
