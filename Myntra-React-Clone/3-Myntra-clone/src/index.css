@@ -81,6 +81,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: black;
+  }
+  .action_name{
+    color:black;
+    cursor: pointer;
   }
   
   /* Main section */
@@ -290,6 +295,11 @@
   .priceDetail-base-discount {
     color: #03a685;
   }
+  .discount-percentage{
+    color: red;
+    margin-left: 2px;
+    font-size: 13px;
+  }
   
   .price-footer {
     font-weight: 700;
@@ -363,6 +373,7 @@
   }
   
   .delivery-details-days {
+    margin-left: 5px;
     color: #03a685;
   }
   
@@ -386,4 +397,3 @@
     margin-bottom: 5px;
     margin-right: 2px;
   }
-  
